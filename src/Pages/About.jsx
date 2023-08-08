@@ -4,13 +4,15 @@ import "../font.css";
 
 const About = () => {
     return (
-        <main className="pt-13 lg:px-24">
+        <main className="pt-10 lg:px-24" id="about">
             <div className="container px-2 pt-8">
                 <div className="flex justify-between lg:justify-start">
-                    <div className="max-w-sm w-56 lg:max-w-xl lg:w-[400px]">
+                    <div className="max-w-sm w-56 lg:max-w-xl lg:w-[400px]" data-aos="fade-right"
+     data-aos-offset="400"
+     data-aos-easing="ease-in-sine">
                         <img className="" src={Fachrifat} alt="" />
                     </div>
-                    <div className="max-w-sm flex flex-col w-56 h-52 lg:w-96 lg:pt-18 lg:items-start lg:px-5">
+                    <div className="max-w-sm flex flex-col w-56 h-52 lg:w-96 lg:pt-18 lg:items-start lg:px-5" data-aos="fade-down" >
                         <div className="bg-white my-2 w-32 h-13 rounded-md px-3 lg:w-48 lg:py-2 lg:mb-5">
                             <h1 className="font-bold lg:text-2xl">HI,</h1>
                             <h1 className="font-bold lg:text-2xl">I'm Ripat✌</h1>
@@ -48,7 +50,9 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className="pt-5 mx-w-md px-3 flex justify-between lg:justify-end lg:gap-10 lg:-translate-y-64 lg:px-24">
+                <div className="pt-5 mx-w-md px-3 flex justify-between lg:justify-end lg:gap-10 lg:relative lg:-top-56 lg:px-24" data-aos="fade-left"
+     data-aos-offset="200"
+     data-aos-easing="ease-in-sine">
                     <div className="w-[200px] text-center px-3 lg:w-[400px] lg:pr-10">
                         <h1 className="text-white font-bold text-xl mb-2 lg:text-3xl">About me</h1>
                         <p className="pb-6 text-sm text-white text-md lg:text-xl">Ini adalah portofolio kedua ku, aku seorang pelajar di SMK Negeri 26 Jakarta dan jurusanku adalah SIJA jurusanku tercintah ❤</p>

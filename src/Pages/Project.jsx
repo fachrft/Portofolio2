@@ -59,13 +59,15 @@ const Project = () => {
     ];
 
     return (
-        <div className="container pt-36 lg:px-32">
+        <div className="container pt-36 lg:px-32" id="project">
             <div className="px-10 lg:px-24 flex items-center">
                 <h1 className="text-white text-3xl font-bold lg:text-4xl">PROJECT</h1>
                 <span><img className="w-12 lg:w-16" src="https://png.pngtree.com/png-clipart/20221011/original/pngtree-laptop-display-vector-design-free-download-png-image_8675040.png" alt="" /></span>
             </div>
             <div className="">
-                <div className="container">
+                <div className="container" data-aos="fade-left"
+     data-aos-offset="500"
+     data-aos-duration="500">
                     <Swiper
                         effect={"coverflow"}
                         grabCursor={true}

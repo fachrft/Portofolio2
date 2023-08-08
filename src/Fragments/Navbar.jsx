@@ -38,28 +38,28 @@ const Navbar = () => {
                         <nav ref={navMenu} className="hidden absolute bg-white max-w-[240px] right-3 w-full py-5 shadow-lg rounded-lg top-9 lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
                             <ul className="lg:flex">
                                 <li className="group">
-                                    <a href="" className="text-base py-2 mx-8 flex lg:text-white font-semibold group-hover:text-sky-500">
+                                    <a href="#" className="text-base py-2 mx-8 flex lg:text-white font-semibold group-hover:text-sky-500">
                                         HOME
                                     </a>
                                 </li>
                                 <li className="group">
-                                    <a href="" className="text-base py-2 mx-8 flex lg:text-white font-semibold group-hover:text-sky-500">
+                                    <a href="#about" className="text-base py-2 mx-8 flex lg:text-white font-semibold group-hover:text-sky-500">
                                         ABOUT
                                     </a>
                                 </li>
                                 <li className="group">
-                                    <a href="" className="text-base py-2 mx-8 flex lg:text-white font-semibold group-hover:text-sky-500">
+                                    <a href="#skills" className="text-base py-2 mx-8 flex lg:text-white font-semibold group-hover:text-sky-500">
+                                        SKILLS
+                                    </a>
+                                </li>
+                                <li className="group">
+                                    <a href="#project" className="text-base py-2 mx-8 flex lg:text-white font-semibold group-hover:text-sky-500">
                                         PROJECT
                                     </a>
                                 </li>
                                 <li className="group">
-                                    <a href="" className="text-base py-2 mx-8 flex lg:text-white font-semibold group-hover:text-sky-500">
+                                    <a href="#education" className="text-base py-2 mx-8 flex lg:text-white font-semibold group-hover:text-sky-500">
                                         EDUCATION
-                                    </a>
-                                </li>
-                                <li className="group">
-                                    <a href="" className="text-base py-2 mx-8 flex lg:text-white font-semibold group-hover:text-sky-500">
-                                        CONTACT
                                     </a>
                                 </li>
                             </ul>
