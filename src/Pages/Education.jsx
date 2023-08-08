@@ -31,7 +31,7 @@ const Education = () => {
             <div className="flex justify-between">
                 <div>
                     {Journey.map((m) => (
-                        <div key={m.id} data-aos="fade-right" data-aos-duration="200" data-aos-delay="200" >
+                        <div key={m.id} data-aos="fade-right" data-aos-duration="200" data-aos-delay="200">
                             <EducationTitle title={m.title} isi={m.isi} tahun={m.tahun} />
                         </div>
                     ))}

@@ -1,5 +1,5 @@
 const Loader = () => {
-        function toggleGordeng(isInit = false) {
+    function toggleGordeng(isInit = false) {
         if (isInit) {
             document.querySelector("body").style = "overflow-y: hidden;";
             setTimeout(() => {
@@ -25,7 +25,7 @@ const Loader = () => {
                     </div>
                     <div className="element flex justify-center items-center w-full h-full">
                         <h1 className="text-3xl text-white text-center font-bold lg:text-left lg:text-5xl">
-                             <span className="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-violet-600">Welcome ❤</span>
+                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-violet-600">Welcome ❤</span>
                         </h1>
                     </div>
                 </div>

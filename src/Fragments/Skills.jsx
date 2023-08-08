@@ -3,7 +3,10 @@ const Skills = () => {
         <div className="h-[40vh] pt-20 lg:px-24" id="skills">
             <div className="px-10 flex items-center gap-3">
                 <h1 className="text-white font-bold text-2xl lg:text-4xl">SKILLS</h1>
-                <span className="" > <img className="w-12 lg:w-16 text-white" src="https://cdn-icons-png.flaticon.com/512/6171/6171939.png" alt="" /></span>
+                <span className="">
+                    {" "}
+                    <img className="w-12 lg:w-16 text-white" src="https://cdn-icons-png.flaticon.com/512/6171/6171939.png" alt="" />
+                </span>
             </div>
             <div className="px-10 w-full pt-8 flex flex-wrap gap-2 lg:w-[60vw]">
                 <div className="shadow-2xl shadow-teal-500 px-2 py-1 flex items-start justify-start rounded-md bg-white" data-aos="fade-right" data-aos-duration="1000">
@@ -18,7 +21,7 @@ const Skills = () => {
                     <img className="w-8 scale-125" src="https://zahrohsite.files.wordpress.com/2017/11/bootstrap.png" alt="" />
                     <span className="px-2 py-1 font-bold">BOOTSTRAP</span>
                 </div>
-                <div className=" px-2 py-1 flex items-start justify-center rounded-md bg-white"data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
+                <div className=" px-2 py-1 flex items-start justify-center rounded-md bg-white" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
                     <img className="w-7" src="https://www.kodingakademi.id/wp-content/uploads/2023/04/Tailwind_CSS_Logo-removebg-preview.png" alt="" />
                     <span className="px-2 py-1 font-bold">TAILWIND</span>
                 </div>
