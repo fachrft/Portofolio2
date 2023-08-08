@@ -17,44 +17,44 @@ import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 const Project = () => {
     const isiCard = [
         {
+            id: 1,
             image: TrashGo,
             title: "Trash Go",
             desc: "Ini adalah web untuk lomba, web ini dibangun oleh 5 orang yang keren keren, alhamdulillahnya kita pertama kali lomba bikin website lolos ke final, tapi sayangnya ga juara😅",
             link: "https://trash-go.vercel.app/",
         },
         {
+            id: 2,
             image: Portofolio,
             title: "Portofolio Kelas X",
             desc: "Kalo ini web pertama kali buat di kelas X  tapi aga kureng ama aga aneh jadi bikin lagi",
             link: "https://fachrifat.vercel.app/",
         },
         {
+            id: 3,
             image: Joki,
             title: "SIJA Joki",
             desc: "Kalo ini web pertama kali buat di kelas X  tapi aga kureng ama aga aneh jadi bikin lagi",
-            onClick: () => {
-                alert("Web tidak di hosting hehehe..");
-            },
         },
         {
+            id: 4,
             image: TrashGo,
             title: "Trash Go",
             desc: "Ini adalah web untuk lomba, web ini dibangun oleh 5 orang yang keren keren, alhamdulillahnya kita pertama kali lomba bikin website lolos ke final, tapi sayangnya ga juara😅",
             link: "https://trash-go.vercel.app/",
         },
         {
+            id: 5,
             image: Portofolio,
             title: "Portofolio Kelas X",
             desc: "Kalo ini web pertama kali buat di kelas X  tapi aga kureng ama aga aneh jadi bikin lagi",
             link: "https://fachrifat.vercel.app/",
         },
         {
+            id: 6,
             image: Joki,
             title: "SIJA Joki",
             desc: "Kalo ini web pertama kali buat di kelas X  tapi aga kureng ama aga aneh jadi bikin lagi",
-            onClick: () => {
-                alert("Web tidak di hosting hehehe..");
-            },
         },
     ];
 
@@ -83,8 +83,8 @@ const Project = () => {
                         className="mySwiper"
                     >
                         {isiCard.map((card) => (
-                            <SwiperSlide key={card.title} className="h-[350px]">
-                                <CardProject image={card.image} title={card.title} desc={card.desc} link={card.link} onClick></CardProject>
+                            <SwiperSlide key={card.id} className="h-[350px]">
+                                <CardProject image={card.image} title={card.title} desc={card.desc} link={card.link}></CardProject>
                             </SwiperSlide>
                         ))}
                     </Swiper>

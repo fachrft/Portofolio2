@@ -4,18 +4,20 @@ import About from "./Pages/About";
 import Project from "./Pages/Project";
 import Loader from "./Pages/LoaderAnimation";
 import Education from "./Pages/Education";
+import Footer from "./Pages/Footer";
 import Background from "./Assets/backgorund.jpg";
 
 const App = () => {
     return (
         <div>
-            <div className="container max-w-[100vw] w-full h-[600vh] bg-cover bg-repeat overflow-hidden" style={{ backgroundImage: `url(${Background})` }}>
+            <div className="container max-w-[100vw] w-full h-full bg-cover bg-repeat overflow-hidden" style={{ backgroundImage: `url(${Background})` }}>
                 <Loader />
                 <Navbar />
                 <HeroSection />
                 <About />
                 <Project />
                 <Education />
+                <Footer />
             </div>
         </div>
     );

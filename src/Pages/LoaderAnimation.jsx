@@ -33,5 +33,4 @@ const Loader = () => {
         </main>
     );
 };
-
 export default Loader;

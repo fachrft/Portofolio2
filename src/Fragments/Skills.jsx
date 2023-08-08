@@ -2,7 +2,7 @@ const Skills = () => {
     return (
         <div className="h-[40vh] pt-8 lg:px-24">
             <div className="px-10 flex items-center gap-3">
-                <h1 className="text-white font-bold text-2xl lg:text-3xl">SKILLS</h1>
+                <h1 className="text-white font-bold text-2xl lg:text-4xl">SKILLS</h1>
                 <span className="" > <img className="w-12 lg:w-16 text-white" src="https://cdn-icons-png.flaticon.com/512/6171/6171939.png" alt="" /></span>
             </div>
             <div className="px-10 w-full pt-8 flex flex-wrap gap-2 lg:w-[60vw]">
