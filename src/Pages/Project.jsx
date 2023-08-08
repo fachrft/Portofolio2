@@ -15,6 +15,10 @@ import "../styles.css";
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
 const Project = () => {
+    const handleAlert = () => {
+        alert("Maaf website tidak di hosting dikarenakan hosting backend berbayar, jadi kalo cuma hosting front doang jelek");
+    };
+
     const isiCard = [
         {
             id: 1,
@@ -27,14 +31,15 @@ const Project = () => {
             id: 2,
             image: Portofolio,
             title: "Portofolio Kelas X",
-            desc: "Kalo ini web pertama kali buat di kelas X  tapi aga kureng ama aga aneh jadi bikin lagi",
+            desc: "Kalo ini web pertama kali buat di kelas X tapi aga kureng ama aga aneh jadi bikin lagi",
             link: "https://fachrifat.vercel.app/",
         },
         {
             id: 3,
             image: Joki,
             title: "SIJA Joki",
-            desc: "Kalo ini web pertama kali buat di kelas X  tapi aga kureng ama aga aneh jadi bikin lagi",
+            desc: "Ini web dinamis pertama kali menggunakan express js, node js, mysql dan kalo frontendnya pake react js tadinya web ini buat tugas kelas X cuma selesai nya pas di kelas XI wkwkwk",
+            onclick: handleAlert
         },
         {
             id: 4,
@@ -54,9 +59,11 @@ const Project = () => {
             id: 6,
             image: Joki,
             title: "SIJA Joki",
-            desc: "Kalo ini web pertama kali buat di kelas X  tapi aga kureng ama aga aneh jadi bikin lagi",
+            desc: "Ini web dinamis pertama kali menggunakan express js, node js, mysql dan kalo frontendnya pake react js tadinya web ini buat tugas kelas X cuma selesai nya pas di kelas XI wkwkwk",
+            onclick: handleAlert
         },
     ];
+
 
     return (
         <div className="container pt-36 lg:px-32" id="project">
@@ -86,7 +93,7 @@ const Project = () => {
                     >
                         {isiCard.map((card) => (
                             <SwiperSlide key={card.id} className="h-[350px]">
-                                <CardProject image={card.image} title={card.title} desc={card.desc} link={card.link}></CardProject>
+                                <CardProject image={card.image} title={card.title} desc={card.desc} link={card.link} onClick={card.onclick}></CardProject>
                             </SwiperSlide>
                         ))}
                     </Swiper>
