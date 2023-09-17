@@ -10,7 +10,7 @@ import Background from "./Assets/backgorund.jpg";
 const App = () => {
     return (
         <div>
-            <div className="container max-w-[100vw] w-full h-full bg-cover bg-repeat overflow-hidden" style={{ backgroundImage: `url(${Background})` }}>
+            <div className="container max-w-[100vw] w-full h-full bg-cover bg-repeat overflow-hidden bg-gradient-to-b from-neutral-950 to-blue-950">
                 <Loader />
                 <Navbar />
                 <HeroSection />
