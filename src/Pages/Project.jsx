@@ -15,6 +15,10 @@ import "../styles.css";
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
 const Project = () => {
+    const handleAlert = () => {
+        alert("Maaf website tidak di hosting dikarenakan hosting backend berbayar, jadi kalo cuma hosting front doang jelek");
+    };
+
     const isiCard = [
         {
             id: 1,
@@ -27,14 +31,15 @@ const Project = () => {
             id: 2,
             image: Portofolio,
             title: "Portofolio Kelas X",
-            desc: "Kalo ini web pertama kali buat di kelas X  tapi aga kureng ama aga aneh jadi bikin lagi",
+            desc: "Kalo ini web pertama kali buat di kelas X tapi aga kureng ama aga aneh jadi bikin lagi",
             link: "https://fachrifat.vercel.app/",
         },
         {
             id: 3,
             image: Joki,
             title: "SIJA Joki",
-            desc: "Kalo ini web pertama kali buat di kelas X  tapi aga kureng ama aga aneh jadi bikin lagi",
+            desc: "Ini web dinamis pertama kali menggunakan express js, node js, mysql dan kalo frontendnya pake react js tadinya web ini buat tugas kelas X cuma selesai nya pas di kelas XI wkwkwk",
+            onclick: handleAlert
         },
         {
             id: 4,
@@ -54,18 +59,22 @@ const Project = () => {
             id: 6,
             image: Joki,
             title: "SIJA Joki",
-            desc: "Kalo ini web pertama kali buat di kelas X  tapi aga kureng ama aga aneh jadi bikin lagi",
+            desc: "Ini web dinamis pertama kali menggunakan express js, node js, mysql dan kalo frontendnya pake react js tadinya web ini buat tugas kelas X cuma selesai nya pas di kelas XI wkwkwk",
+            onclick: handleAlert
         },
     ];
 
+
     return (
-        <div className="container pt-36 lg:px-32">
+        <div className="container pt-36 lg:px-32" id="project">
             <div className="px-10 lg:px-24 flex items-center">
                 <h1 className="text-white text-3xl font-bold lg:text-4xl">PROJECT</h1>
-                <span><img className="w-12 lg:w-16" src="https://png.pngtree.com/png-clipart/20221011/original/pngtree-laptop-display-vector-design-free-download-png-image_8675040.png" alt="" /></span>
+                <span>
+                    <img className="w-12 lg:w-16" src="https://png.pngtree.com/png-clipart/20221011/original/pngtree-laptop-display-vector-design-free-download-png-image_8675040.png" alt="" />
+                </span>
             </div>
             <div className="">
-                <div className="container">
+                <div className="container" data-aos="fade-left" data-aos-offset="500" data-aos-duration="500">
                     <Swiper
                         effect={"coverflow"}
                         grabCursor={true}
@@ -84,7 +93,7 @@ const Project = () => {
                     >
                         {isiCard.map((card) => (
                             <SwiperSlide key={card.id} className="h-[350px]">
-                                <CardProject image={card.image} title={card.title} desc={card.desc} link={card.link}></CardProject>
+                                <CardProject image={card.image} title={card.title} desc={card.desc} link={card.link} onClick={card.onclick}></CardProject>
                             </SwiperSlide>
                         ))}
                     </Swiper>
@@ -95,4 +104,3 @@ const Project = () => {
 };
 
 export default Project;
-
