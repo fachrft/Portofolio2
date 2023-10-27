@@ -31,9 +31,9 @@ const Navbar = () => {
                     </div>
                     <div className="flex items-center">
                         <button ref={hamburger} onClick={clickHamburger} className="animasi-x absolute pr-4 right-4 block lg:hidden" type="Button">
-                            <span className="hamburger transition duration-200 ease-in-out origin-top-left"></span>
-                            <span className="hamburger transition duration-200 ease-in-out"></span>
-                            <span className="hamburger transition duration-200 ease-in-out origin-bottom-left"></span>
+                            <span className="hamburger border-2 transition duration-200 ease-in-out origin-top-left"></span>
+                            <span className="hamburger border-2 transition duration-200 ease-in-out"></span>
+                            <span className="hamburger border-2 transition duration-200 ease-in-out origin-bottom-left"></span>
                         </button>
                         <nav ref={navMenu} className="hidden absolute bg-white max-w-[240px] right-3 w-full py-5 shadow-lg rounded-lg top-9 lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
                             <ul className="lg:flex">
