@@ -61,7 +61,7 @@ const Project = () => {
         {
             id: 6,
             image: GSS,
-            title: "SIJA Joki",
+            title: "Gerakan Sekolah Sehat",
             desc: "",
             link: "https://gss-masbrew.vercel.app/"
         },
