@@ -18,7 +18,7 @@ const HeroSection = () => {
                     <p className="text-center lg:text-xl lg:text-left lg:mb-5 ">Junior {text} Developer</p>
                     <div className="mt-4 flex justify-center lg:justify-start">
                         <div className="p-2 bg-sky-800 rounded-full text-center w-36 lg:w-52">
-                            <a href="../../public/cv.pdf" download className="lg:text-xl cursor-pointer">
+                            <a href="/cv.pdf" download className="lg:text-xl cursor-pointer">
                                 Download Cv
                             </a>
                         </div>
