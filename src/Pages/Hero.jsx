@@ -7,11 +7,6 @@ const HeroSection = () => {
         words: ["Backend", "Frontend"],
         loop: 0,
     });
-
-    const Cv = () => {
-        alert('Maaf Cv Belum Dirilis')
-    }
-
     return (
         <section className="pt-40 h-[100vh] lg:px-40">
             <div className="container lg:flex lg:justify-center lg:items-center">
@@ -23,7 +18,7 @@ const HeroSection = () => {
                     <p className="text-center lg:text-xl lg:text-left lg:mb-5 ">Junior {text} Developer</p>
                     <div className="mt-4 flex justify-center lg:justify-start">
                         <div className="p-2 bg-sky-800 rounded-full text-center w-36 lg:w-52">
-                            <p onClick={Cv} className="lg:text-xl cursor-pointer">Download Cv</p>
+                            <a href="/cv.pdf" download className="lg:text-xl cursor-pointer">Download Cv</a>
                         </div>
                     </div>
                 </div>
