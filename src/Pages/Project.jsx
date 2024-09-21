@@ -2,6 +2,9 @@ import CardProject from "../Fragments/CardProject";
 import TrashGo from "../Assets/TrashGo.jpg";
 import Portofolio from "../Assets/Portofolio Kelas 10.jpg";
 import Joki from "../Assets/Joki.jpg";
+import ZeroCard from '../Assets/zero-card.png'
+import ZeroCardn from '../Assets/zero-cardn.png'
+import GSS from '../Assets/gss.png'
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -24,43 +27,43 @@ const Project = () => {
             id: 1,
             image: TrashGo,
             title: "Trash Go",
-            desc: "Ini adalah web untuk lomba, web ini dibangun oleh 5 orang yang keren keren, alhamdulillahnya kita pertama kali lomba bikin website lolos ke final, tapi sayangnya ga juara😅",
+            desc: "",
             link: "https://trash-go.vercel.app/",
         },
         {
             id: 2,
             image: Portofolio,
             title: "Portofolio Kelas X",
-            desc: "Kalo ini web pertama kali buat di kelas X tapi aga kureng ama aga aneh jadi bikin lagi",
+            desc: "",
             link: "https://fachrifat.vercel.app/",
         },
         {
             id: 3,
             image: Joki,
             title: "SIJA Joki",
-            desc: "Ini web dinamis pertama kali menggunakan express js, node js, mysql dan kalo frontendnya pake react js tadinya web ini buat tugas kelas X cuma selesai nya pas di kelas XI wkwkwk",
+            desc: "",
             onclick: handleAlert
         },
         {
             id: 4,
-            image: TrashGo,
-            title: "Trash Go",
-            desc: "Ini adalah web untuk lomba, web ini dibangun oleh 5 orang yang keren keren, alhamdulillahnya kita pertama kali lomba bikin website lolos ke final, tapi sayangnya ga juara😅",
-            link: "https://trash-go.vercel.app/",
+            image: ZeroCard,
+            title: "Zero Card",
+            desc: "",
+            link: "https://zero-cardn.netlify.app/",
         },
         {
             id: 5,
-            image: Portofolio,
-            title: "Portofolio Kelas X",
-            desc: "Kalo ini web pertama kali buat di kelas X  tapi aga kureng ama aga aneh jadi bikin lagi",
-            link: "https://fachrifat.vercel.app/",
+            image: ZeroCardn,
+            title: "Zero Cardn",
+            desc: "",
+            link: "https://zerro-carddn.vercel.app/",
         },
         {
             id: 6,
-            image: Joki,
+            image: GSS,
             title: "SIJA Joki",
-            desc: "Ini web dinamis pertama kali menggunakan express js, node js, mysql dan kalo frontendnya pake react js tadinya web ini buat tugas kelas X cuma selesai nya pas di kelas XI wkwkwk",
-            onclick: handleAlert
+            desc: "",
+            link: "https://gss-masbrew.vercel.app/"
         },
     ];
 

@@ -1,3 +1,7 @@
+import Skill from "../Components/Skill";
+import PHP from '../Assets/php.png';
+import Laravel from '../Assets/Laravel.svg.png';
+
 const Skills = () => {
     return (
         <div className="h-[40vh] pt-20 lg:px-24" id="skills">
@@ -9,38 +13,18 @@ const Skills = () => {
                 </span>
             </div>
             <div className="px-10 w-full pt-8 flex flex-wrap gap-2 lg:w-[60vw]">
-                <div className="shadow-2xl shadow-teal-500 px-2 py-1 flex items-start justify-start rounded-md bg-white" data-aos="fade-right" data-aos-duration="1000">
-                    <img className="w-7" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png" alt="" />
-                    <span className="px-2 py-1 font-bold">HTML</span>
-                </div>
-                <div className="px-2 py-1 flex items-start justify-center rounded-md bg-white" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-                    <img className="w-5" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/800px-CSS3_logo_and_wordmark.svg.png" alt="" />
-                    <span className="pl-4 py-1 text-center font-bold">CSS</span>
-                </div>
-                <div className="px-2 py-1 flex items-start justify-center rounded-md bg-white" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
-                    <img className="w-8 scale-125" src="https://zahrohsite.files.wordpress.com/2017/11/bootstrap.png" alt="" />
-                    <span className="px-2 py-1 font-bold">BOOTSTRAP</span>
-                </div>
-                <div className=" px-2 py-1 flex items-start justify-center rounded-md bg-white" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
-                    <img className="w-7" src="https://www.kodingakademi.id/wp-content/uploads/2023/04/Tailwind_CSS_Logo-removebg-preview.png" alt="" />
-                    <span className="px-2 py-1 font-bold">TAILWIND</span>
-                </div>
-                <div className=" px-2 py-1 flex items-start justify-center rounded-md bg-white" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
-                    <img className="w-8 scale-[1.18] -translate-y-[2px]" src="https://pluralsight2.imgix.net/paths/images/javascript-542e10ea6e.png" alt="" />
-                    <span className="px-2 py-1 font-bold">JAVASCRIPT</span>
-                </div>
-                <div className=" px-3 py-2 flex items-start justify-center rounded-md bg-white" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
-                    <img className="w-6 scale-[1.18]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="" />
-                    <span className="px-2 font-bold">REACT JS</span>
-                </div>
-                <div className=" px-3 py-2 flex items-start justify-center rounded-md bg-white" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200">
-                    <img className="w-7 scale-125 translate-y-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" alt="" />
-                    <span className="px-3 font-bold">NODE JS</span>
-                </div>
-                <div className=" px-3 py-2 flex items-start justify-center rounded-md bg-white" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1400">
-                    <img className="w-7 scale-125" src="https://youteam.io/blog/wp-content/uploads/2022/04/expressjs_logo.png" alt="" />
-                    <span className="px-2 font-bold">EXPRESS JS</span>
-                </div>
+                <Skill img="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png" isi="HTML" width="w-7" />
+                <Skill img="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/800px-CSS3_logo_and_wordmark.svg.png" isi="CSS" width="w-5"/>
+                <Skill img="https://zahrohsite.files.wordpress.com/2017/11/bootstrap.png" isi="Bootstrap" width="w-10"/>
+                <Skill img="https://www.kodingakademi.id/wp-content/uploads/2023/04/Tailwind_CSS_Logo-removebg-preview.png" isi="Tailwind" width="w-7"/>
+                <Skill img="https://pluralsight2.imgix.net/paths/images/javascript-542e10ea6e.png" isi="Javascript" width="w-9"/>
+                <Skill img="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" isi="Node JS" width="w-7 translate-y-2"/>
+                <Skill img="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" isi="React JS" width="w-7 translate-y-1"/>
+                <Skill img="https://youteam.io/blog/wp-content/uploads/2022/04/expressjs_logo.png" isi="Express JS" width="w-10"/>
+                <Skill img={PHP} isi="PHP" width="w-8"/>
+                <Skill img={Laravel} isi="Laravel" width="w-8"/>
+                <Skill img="https://w7.pngwing.com/pngs/444/484/png-transparent-mysql-database-encapsulated-postscript-logo-jquery-blue-text-logo-thumbnail.png" isi="MySQL" width="w-8"/>
+                <Skill img="https://w7.pngwing.com/pngs/956/695/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail.png" isi="MongoDB" width="w-8"/>
             </div>
         </div>
     );
